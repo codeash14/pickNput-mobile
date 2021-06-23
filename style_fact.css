@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby One SC');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Bowlby One SC';font-size: 22px;
+}
+
+@keyframes shake{
+    0%{transform: translateX(-10px);}
+    10%{transform: translateX(10px);}
+    15%{transform: translateX(-8px);}
+    20% {
+        transform: translateX(8px);
+    }
+    22% {
+        transform: translateX(-4px);
+    }
+    24% {
+        transform: translateX(4px);
+    }
+    25%{
+        transform: translateX(0px);
+    }
+    
+
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+    letter-spacing: 2px;
+    color: black;
+    -webkit-text-stroke: 1px aqua;
+}
+
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 2px;
+    color: black;
+    -webkit-text-stroke: 0.5px aqua;
+}
+
+.cloud{
+    min-height:40vh;
+    width: 40vw;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -100px;
+    background: url('./facts/what.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: initial;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.facts{
+    width: 50vw;
+    height: 50vh;
+    background: url('./facts/img1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: grey;
+    background-image: url('./img/ind-crop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.menu-square h1,h4{
+    text-align: center;
+}
+
+.start-box{
+    position: absolute;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 400px;
+    justify-content: center;
+    background-image: url('./img/background-image.png');
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.menu-btn{
+    width: fit-content;
+    height: 35px;
+    color: white;
+    background-color: transparent;
+    padding: 7px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-style: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    margin: 2px 2px 2px 2px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 3px solid aquamarine;
+    transition: background-color 0.3s ease-in-out,
+    border .3s ease-in-out,
+    color .2s ease-in-out;
+}
+
+.menu-btn:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+    border: white 3px solid;
+}
